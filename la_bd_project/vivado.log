@@ -1,0 +1,1351 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Jul 17 00:30:27 2026
+# Process ID         : 42775
+# Current directory  : /home/binh/BTL_HTN_GTN_final/la_bd_project
+# Command line       : vivado -mode batch -source build_bitstream.tcl
+# Log file           : /home/binh/BTL_HTN_GTN_final/la_bd_project/vivado.log
+# Journal file       : /home/binh/BTL_HTN_GTN_final/la_bd_project/vivado.jou
+# Running On         : binh
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 841.050 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16479 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18627 MB
+# Available Virtual  : 10559 MB
+#-----------------------------------------------------------
+source build_bitstream.tcl
+# open_project la_bd_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/binh/BTL_HTN_GTN_final'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/binh/BTL_HTN_GTN_final' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/binh/BTL_HTN_GTN_final/la_bd_project'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/binh/Tools/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+# reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.srcs/utils_1/imports/synth_1/la_system_wrapper.dcp with file /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/la_system_wrapper.dcp
+# launch_runs synth_1 -jobs 8
+[Fri Jul 17 00:30:32 2026] Launched synth_1...
+Run output will be captured here: /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/runme.log
+# wait_on_run synth_1
+[Fri Jul 17 00:30:32 2026] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log la_system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source la_system_wrapper.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Jul 17 00:30:34 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source la_system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/binh/BTL_HTN_GTN_final'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/binh/BTL_HTN_GTN_final' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/binh/Tools/Xilinx/Vivado/2024.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.srcs/utils_1/imports/synth_1/la_system_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.srcs/utils_1/imports/synth_1/la_system_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top la_system_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 42909
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1954.207 ; gain = 375.512 ; free physical = 224 ; free virtual = 8504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'la_system_wrapper' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/hdl/la_system_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'la_system' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:13]
+INFO: [Synth 8-6157] synthesizing module 'la_system_logic_analyzer_top_0_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/.Xil/Vivado-42887-binh/realtime/la_system_logic_analyzer_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'la_system_logic_analyzer_top_0_0' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/.Xil/Vivado-42887-binh/realtime/la_system_logic_analyzer_top_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'la_system_processing_system7_0_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/.Xil/Vivado-42887-binh/realtime/la_system_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'la_system_processing_system7_0_0' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/.Xil/Vivado-42887-binh/realtime/la_system_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'la_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:174]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'la_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:174]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'la_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:174]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'la_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:174]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'la_system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:174]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'la_system_processing_system7_0_0' has 68 connections declared, but only 63 given [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:174]
+INFO: [Synth 8-6157] synthesizing module 'la_system_rst_ps7_0_200M_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/.Xil/Vivado-42887-binh/realtime/la_system_rst_ps7_0_200M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'la_system_rst_ps7_0_200M_0' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/.Xil/Vivado-42887-binh/realtime/la_system_rst_ps7_0_200M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'la_system_rst_ps7_0_200M_0' is unconnected for instance 'rst_ps7_0_200M' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:238]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'la_system_rst_ps7_0_200M_0' is unconnected for instance 'rst_ps7_0_200M' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:238]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'la_system_rst_ps7_0_200M_0' is unconnected for instance 'rst_ps7_0_200M' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:238]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'la_system_rst_ps7_0_200M_0' is unconnected for instance 'rst_ps7_0_200M' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:238]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_200M' of module 'la_system_rst_ps7_0_200M_0' has 10 connections declared, but only 6 given [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:238]
+INFO: [Synth 8-6157] synthesizing module 'la_system_smartconnect_0_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/.Xil/Vivado-42887-binh/realtime/la_system_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'la_system_smartconnect_0_0' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/.Xil/Vivado-42887-binh/realtime/la_system_smartconnect_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'la_system_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:245]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'la_system_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:245]
+WARNING: [Synth 8-7023] instance 'smartconnect_0' of module 'la_system_smartconnect_0_0' has 59 connections declared, but only 57 given [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:245]
+INFO: [Synth 8-6155] done synthesizing module 'la_system' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/synth/la_system.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'la_system_wrapper' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/hdl/la_system_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2031.145 ; gain = 452.449 ; free physical = 317 ; free virtual = 8440
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2043.020 ; gain = 464.324 ; free physical = 315 ; free virtual = 8438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2043.020 ; gain = 464.324 ; free physical = 315 ; free virtual = 8438
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2043.020 ; gain = 0.000 ; free physical = 315 ; free virtual = 8438
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc] for cell 'la_system_i/processing_system7_0'
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc] for cell 'la_system_i/processing_system7_0'
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_logic_analyzer_top_0_0/la_system_logic_analyzer_top_0_0/la_system_logic_analyzer_top_0_0_in_context.xdc] for cell 'la_system_i/logic_analyzer_top_0'
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_logic_analyzer_top_0_0/la_system_logic_analyzer_top_0_0/la_system_logic_analyzer_top_0_0_in_context.xdc] for cell 'la_system_i/logic_analyzer_top_0'
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_rst_ps7_0_200M_0/la_system_rst_ps7_0_200M_0/la_system_rst_ps7_0_200M_0_in_context.xdc] for cell 'la_system_i/rst_ps7_0_200M'
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_rst_ps7_0_200M_0/la_system_rst_ps7_0_200M_0/la_system_rst_ps7_0_200M_0_in_context.xdc] for cell 'la_system_i/rst_ps7_0_200M'
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_smartconnect_0_0/la_system_smartconnect_0_0/la_system_smartconnect_0_0_in_context.xdc] for cell 'la_system_i/smartconnect_0'
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_smartconnect_0_0/la_system_smartconnect_0_0/la_system_smartconnect_0_0_in_context.xdc] for cell 'la_system_i/smartconnect_0'
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.srcs/constrs_1/new/la_pins.xdc]
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.srcs/constrs_1/new/la_pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.srcs/constrs_1/new/la_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/la_system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/la_system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2091.945 ; gain = 0.000 ; free physical = 279 ; free virtual = 8420
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2091.945 ; gain = 0.000 ; free physical = 289 ; free virtual = 8430
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2091.945 ; gain = 513.250 ; free physical = 382 ; free virtual = 8538
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2099.949 ; gain = 521.254 ; free physical = 382 ; free virtual = 8538
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0/la_system_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property KEEP_HIERARCHY = SOFT for la_system_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for la_system_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for la_system_i/logic_analyzer_top_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for la_system_i/rst_ps7_0_200M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for la_system_i/smartconnect_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2099.949 ; gain = 521.254 ; free physical = 391 ; free virtual = 8547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2099.949 ; gain = 521.254 ; free physical = 391 ; free virtual = 8548
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2099.949 ; gain = 521.254 ; free physical = 399 ; free virtual = 8559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2178.949 ; gain = 600.254 ; free physical = 298 ; free virtual = 8446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2178.949 ; gain = 600.254 ; free physical = 298 ; free virtual = 8446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2188.973 ; gain = 610.277 ; free physical = 282 ; free virtual = 8431
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2357.785 ; gain = 779.090 ; free physical = 255 ; free virtual = 8288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2357.785 ; gain = 779.090 ; free physical = 255 ; free virtual = 8288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2357.785 ; gain = 779.090 ; free physical = 255 ; free virtual = 8288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2357.785 ; gain = 779.090 ; free physical = 255 ; free virtual = 8288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2357.785 ; gain = 779.090 ; free physical = 255 ; free virtual = 8288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2357.785 ; gain = 779.090 ; free physical = 255 ; free virtual = 8288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |la_system_logic_analyzer_top_0_0 |         1|
+|2     |la_system_processing_system7_0_0 |         1|
+|3     |la_system_rst_ps7_0_200M_0       |         1|
+|4     |la_system_smartconnect_0_0       |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |la_system_logic_analyzer_top_0 |     1|
+|2     |la_system_processing_system7_0 |     1|
+|3     |la_system_rst_ps7_0_200M       |     1|
+|4     |la_system_smartconnect_0       |     1|
+|5     |IBUF                           |    16|
+|6     |OBUF                           |     3|
++------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2357.785 ; gain = 779.090 ; free physical = 255 ; free virtual = 8288
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2357.785 ; gain = 730.164 ; free physical = 255 ; free virtual = 8288
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2357.793 ; gain = 779.090 ; free physical = 255 ; free virtual = 8288
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2357.793 ; gain = 0.000 ; free physical = 255 ; free virtual = 8288
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2357.793 ; gain = 0.000 ; free physical = 445 ; free virtual = 8479
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1a2a2860
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 2357.793 ; gain = 883.148 ; free physical = 443 ; free virtual = 8477
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1559.856; main = 1559.856; forked = 267.811
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3024.113; main = 2357.789; forked = 924.160
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2381.797 ; gain = 0.000 ; free physical = 443 ; free virtual = 8477
+INFO: [Common 17-1381] The checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/synth_1/la_system_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file la_system_wrapper_utilization_synth.rpt -pb la_system_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 17 00:30:56 2026...
+[Fri Jul 17 00:30:59 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1512.215 ; gain = 0.000 ; free physical = 1700 ; free virtual = 9753
+# launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Jul 17 00:31:01 2026] Launched impl_1...
+Run output will be captured here: /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/impl_1/runme.log
+# wait_on_run impl_1
+[Fri Jul 17 00:31:01 2026] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log la_system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source la_system_wrapper.tcl -notrace
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Jul 17 00:31:03 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source la_system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/binh/BTL_HTN_GTN_final'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/binh/BTL_HTN_GTN_final' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/impl_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/binh/Tools/Xilinx/Vivado/2024.2/data/ip'.
+Command: link_design -top la_system_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_logic_analyzer_top_0_0/la_system_logic_analyzer_top_0_0.dcp' for cell 'la_system_i/logic_analyzer_top_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0.dcp' for cell 'la_system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_rst_ps7_0_200M_0/la_system_rst_ps7_0_200M_0.dcp' for cell 'la_system_i/rst_ps7_0_200M'
+INFO: [Project 1-454] Reading design checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_smartconnect_0_0/la_system_smartconnect_0_0.dcp' for cell 'la_system_i/smartconnect_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1525.297 ; gain = 0.000 ; free physical = 1134 ; free virtual = 9166
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0.xdc] for cell 'la_system_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0.xdc] for cell 'la_system_i/processing_system7_0/inst'
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_rst_ps7_0_200M_0/la_system_rst_ps7_0_200M_0_board.xdc] for cell 'la_system_i/rst_ps7_0_200M/U0'
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_rst_ps7_0_200M_0/la_system_rst_ps7_0_200M_0_board.xdc] for cell 'la_system_i/rst_ps7_0_200M/U0'
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_rst_ps7_0_200M_0/la_system_rst_ps7_0_200M_0.xdc] for cell 'la_system_i/rst_ps7_0_200M/U0'
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_rst_ps7_0_200M_0/la_system_rst_ps7_0_200M_0.xdc] for cell 'la_system_i/rst_ps7_0_200M/U0'
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_smartconnect_0_0/bd_0/ip/ip_1/bd_94ec_psr_aclk_0_board.xdc] for cell 'la_system_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_smartconnect_0_0/bd_0/ip/ip_1/bd_94ec_psr_aclk_0_board.xdc] for cell 'la_system_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_smartconnect_0_0/bd_0/ip/ip_1/bd_94ec_psr_aclk_0.xdc] for cell 'la_system_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_smartconnect_0_0/bd_0/ip/ip_1/bd_94ec_psr_aclk_0.xdc] for cell 'la_system_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_smartconnect_0_0/smartconnect.xdc] for cell 'la_system_i/smartconnect_0/inst'
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_smartconnect_0_0/smartconnect.xdc] for cell 'la_system_i/smartconnect_0/inst'
+Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.srcs/constrs_1/new/la_pins.xdc]
+Finished Parsing XDC File [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.srcs/constrs_1/new/la_pins.xdc]
+INFO: [Project 1-1714] 14 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1768.793 ; gain = 0.000 ; free physical = 1016 ; free virtual = 9047
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+15 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.66 . Memory (MB): peak = 1841.996 ; gain = 73.203 ; free physical = 954 ; free virtual = 8985
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1e4237098
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2299.824 ; gain = 457.828 ; free physical = 495 ; free virtual = 8564
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1e4237098
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 216 ; free virtual = 8226
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1e4237098
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 218 ; free virtual = 8225
+Phase 1 Initialization | Checksum: 1e4237098
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 234 ; free virtual = 8225
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1e4237098
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 257 ; free virtual = 8236
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1e4237098
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 255 ; free virtual = 8229
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1e4237098
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 261 ; free virtual = 8230
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 10 inverter(s) to 36 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1484a0a77
+
+Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 291 ; free virtual = 8234
+Retarget | Checksum: 1484a0a77
+INFO: [Opt 31-389] Phase Retarget created 8 cells and removed 43 cells
+INFO: [Opt 31-1021] In phase Retarget, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 4 load pin(s).
+Phase 4 Constant propagation | Checksum: 16659689f
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 292 ; free virtual = 8235
+Constant propagation | Checksum: 16659689f
+INFO: [Opt 31-389] Phase Constant propagation created 8 cells and removed 37 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 291 ; free virtual = 8234
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 290 ; free virtual = 8233
+Phase 5 Sweep | Checksum: 1c535e7aa
+
+Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.3 . Memory (MB): peak = 2646.629 ; gain = 0.000 ; free physical = 290 ; free virtual = 8233
+Sweep | Checksum: 1c535e7aa
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 103 cells
+INFO: [Opt 31-1021] In phase Sweep, 25 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 1c535e7aa
+
+Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2678.645 ; gain = 32.016 ; free physical = 290 ; free virtual = 8233
+BUFG optimization | Checksum: 1c535e7aa
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1c535e7aa
+
+Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2678.645 ; gain = 32.016 ; free physical = 290 ; free virtual = 8233
+Shift Register Optimization | Checksum: 1c535e7aa
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1c66801cb
+
+Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.33 . Memory (MB): peak = 2678.645 ; gain = 32.016 ; free physical = 290 ; free virtual = 8233
+Post Processing Netlist | Checksum: 1c66801cb
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 197db7f78
+
+Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.37 . Memory (MB): peak = 2678.645 ; gain = 32.016 ; free physical = 291 ; free virtual = 8233
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2678.645 ; gain = 0.000 ; free physical = 291 ; free virtual = 8233
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 197db7f78
+
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2678.645 ; gain = 32.016 ; free physical = 291 ; free virtual = 8233
+Phase 9 Finalization | Checksum: 197db7f78
+
+Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2678.645 ; gain = 32.016 ; free physical = 291 ; free virtual = 8233
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               8  |              43  |                                             20  |
+|  Constant propagation         |               8  |              37  |                                             20  |
+|  Sweep                        |               0  |             103  |                                             25  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             20  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 197db7f78
+
+Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2678.645 ; gain = 32.016 ; free physical = 291 ; free virtual = 8233
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 32 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 16 newly gated: 16 Total Ports: 64
+Ending PowerOpt Patch Enables Task | Checksum: 1a6457ab2
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 328 ; free virtual = 8136
+Ending Power Optimization Task | Checksum: 1a6457ab2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2917.512 ; gain = 238.867 ; free physical = 328 ; free virtual = 8136
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1a6457ab2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 328 ; free virtual = 8136
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 328 ; free virtual = 8136
+Ending Netlist Obfuscation Task | Checksum: 1982f6d16
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 328 ; free virtual = 8136
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2917.512 ; gain = 1148.719 ; free physical = 328 ; free virtual = 8136
+INFO: [Vivado 12-24828] Executing command : report_drc -file la_system_wrapper_drc_opted.rpt -pb la_system_wrapper_drc_opted.pb -rpx la_system_wrapper_drc_opted.rpx
+Command: report_drc -file la_system_wrapper_drc_opted.rpt -pb la_system_wrapper_drc_opted.pb -rpx la_system_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/impl_1/la_system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 304 ; free virtual = 8115
+Wrote PlaceDB: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 303 ; free virtual = 8114
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 303 ; free virtual = 8114
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 303 ; free virtual = 8114
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 303 ; free virtual = 8114
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 301 ; free virtual = 8114
+Write Physdb Complete: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 301 ; free virtual = 8114
+INFO: [Common 17-1381] The checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/impl_1/la_system_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 314 ; free virtual = 8116
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1703911df
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 314 ; free virtual = 8116
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 314 ; free virtual = 8116
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1ba7eb5fa
+
+Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 286 ; free virtual = 8100
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1fd6b6adf
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.65 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 288 ; free virtual = 8103
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1fd6b6adf
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.65 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 288 ; free virtual = 8103
+Phase 1 Placer Initialization | Checksum: 1fd6b6adf
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.66 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 288 ; free virtual = 8103
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 23c58bcb3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 287 ; free virtual = 8099
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 216aff014
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 323 ; free virtual = 8135
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 216aff014
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 323 ; free virtual = 8135
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 26a95536f
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 364 ; free virtual = 8170
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 206c19ac1
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 361 ; free virtual = 8168
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 114 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 40 nets or LUTs. Breaked 0 LUT, combined 40 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 359 ; free virtual = 8168
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             40  |                    40  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             40  |                    40  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 2abdf9419
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 360 ; free virtual = 8169
+Phase 2.5 Global Place Phase2 | Checksum: 1c37da7da
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 359 ; free virtual = 8169
+Phase 2 Global Placement | Checksum: 1c37da7da
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 359 ; free virtual = 8169
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 27f6b8def
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 359 ; free virtual = 8169
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 25902a689
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 357 ; free virtual = 8167
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2384b6029
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 357 ; free virtual = 8167
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 234c7f8fc
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 357 ; free virtual = 8167
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1a9dffc1e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1d222c709
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1d9a62f56
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+Phase 3 Detail Placement | Checksum: 1d9a62f56
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19eb89426
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.377 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 18197b594
+
+Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8160
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 1625b2fd2
+
+Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8160
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19eb89426
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8160
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.377. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1d6da7c7d
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+Phase 4.1 Post Commit Optimization | Checksum: 1d6da7c7d
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1d6da7c7d
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1d6da7c7d
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+Phase 4.3 Placer Reporting | Checksum: 1d6da7c7d
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 19db5c8a9
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 351 ; free virtual = 8161
+Ending Placer Task | Checksum: 1014020c7
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 350 ; free virtual = 8160
+80 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file la_system_wrapper_utilization_placed.rpt -pb la_system_wrapper_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file la_system_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 327 ; free virtual = 8137
+INFO: [Vivado 12-24828] Executing command : report_io -file la_system_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 315 ; free virtual = 8125
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 315 ; free virtual = 8125
+Wrote PlaceDB: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 314 ; free virtual = 8127
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 314 ; free virtual = 8127
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 314 ; free virtual = 8127
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 314 ; free virtual = 8127
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 314 ; free virtual = 8128
+Write Physdb Complete: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 314 ; free virtual = 8128
+INFO: [Common 17-1381] The checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/impl_1/la_system_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 315 ; free virtual = 8127
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 3.377 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+91 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 315 ; free virtual = 8127
+Wrote PlaceDB: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 311 ; free virtual = 8125
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 311 ; free virtual = 8125
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 308 ; free virtual = 8123
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 308 ; free virtual = 8123
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 306 ; free virtual = 8122
+Write Physdb Complete: Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 306 ; free virtual = 8122
+INFO: [Common 17-1381] The checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/impl_1/la_system_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 2f1dc6d9 ConstDB: 0 ShapeSum: bc28e6fe RouteDB: 15f972f0
+Post Restoration Checksum: NetGraph: c3333b3c | NumContArr: ef336a1c | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 337b89a92
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 308 ; free virtual = 8006
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 337b89a92
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 308 ; free virtual = 8006
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 337b89a92
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 308 ; free virtual = 8006
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 22fb8a977
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 290 ; free virtual = 7977
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.364  | TNS=0.000  | WHS=-0.180 | THS=-22.785|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1602
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 1602
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 24b8f92ab
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 281 ; free virtual = 7967
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 24b8f92ab
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 281 ; free virtual = 7967
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 17b5d3778
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+Phase 4 Initial Routing | Checksum: 17b5d3778
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 107
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.420  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 20cac0f43
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.420  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 1dc3e74cd
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+Phase 5 Rip-up And Reroute | Checksum: 1dc3e74cd
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1ee8d8b34
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.420  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 6.1 Delay CleanUp | Checksum: 1ee8d8b34
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 1ee8d8b34
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+Phase 6 Delay and Skew Optimization | Checksum: 1ee8d8b34
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.420  | TNS=0.000  | WHS=0.031  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 21d89b58a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+Phase 7 Post Hold Fix | Checksum: 21d89b58a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.370612 %
+  Global Horizontal Routing Utilization  = 0.39689 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 21d89b58a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 21d89b58a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 21c2fa4c8
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 21c2fa4c8
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.420  | TNS=0.000  | WHS=0.031  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 21c2fa4c8
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+Total Elapsed time in route_design: 16.06 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 2545f7cad
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 2545f7cad
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 279 ; free virtual = 7966
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+104 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2917.512 ; gain = 0.000 ; free physical = 278 ; free virtual = 7965
+INFO: [Vivado 12-24828] Executing command : report_drc -file la_system_wrapper_drc_routed.rpt -pb la_system_wrapper_drc_routed.pb -rpx la_system_wrapper_drc_routed.rpx
+Command: report_drc -file la_system_wrapper_drc_routed.rpt -pb la_system_wrapper_drc_routed.pb -rpx la_system_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/impl_1/la_system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file la_system_wrapper_methodology_drc_routed.rpt -pb la_system_wrapper_methodology_drc_routed.pb -rpx la_system_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file la_system_wrapper_methodology_drc_routed.rpt -pb la_system_wrapper_methodology_drc_routed.pb -rpx la_system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/impl_1/la_system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file la_system_wrapper_timing_summary_routed.rpt -pb la_system_wrapper_timing_summary_routed.pb -rpx la_system_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24838] Running report commands "report_bus_skew, report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file la_system_wrapper_route_status.rpt -pb la_system_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file la_system_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file la_system_wrapper_bus_skew_routed.rpt -pb la_system_wrapper_bus_skew_routed.pb -rpx la_system_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24828] Executing command : report_power -file la_system_wrapper_power_routed.rpt -pb la_system_wrapper_power_summary_routed.pb -rpx la_system_wrapper_power_routed.rpx
+Command: report_power -file la_system_wrapper_power_routed.rpt -pb la_system_wrapper_power_summary_routed.pb -rpx la_system_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+124 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file la_system_wrapper_clock_utilization_routed.rpt
+generate_parallel_reports: Time (s): cpu = 00:00:25 ; elapsed = 00:00:06 . Memory (MB): peak = 3045.711 ; gain = 128.199 ; free physical = 198 ; free virtual = 7902
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3045.711 ; gain = 0.000 ; free physical = 205 ; free virtual = 7909
+Wrote PlaceDB: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3045.711 ; gain = 0.000 ; free physical = 201 ; free virtual = 7907
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3045.711 ; gain = 0.000 ; free physical = 201 ; free virtual = 7907
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3045.711 ; gain = 0.000 ; free physical = 191 ; free virtual = 7898
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3045.711 ; gain = 0.000 ; free physical = 191 ; free virtual = 7898
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3045.711 ; gain = 0.000 ; free physical = 191 ; free virtual = 7899
+Write Physdb Complete: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3045.711 ; gain = 0.000 ; free physical = 191 ; free virtual = 7899
+INFO: [Common 17-1381] The checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/impl_1/la_system_wrapper_routed.dcp' has been generated.
+Command: write_bitstream -force la_system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./la_system_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+136 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 3338.031 ; gain = 260.305 ; free physical = 235 ; free virtual = 7538
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 17 00:31:59 2026...
+[Fri Jul 17 00:31:59 2026] impl_1 finished
+wait_on_runs: Time (s): cpu = 00:01:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1512.215 ; gain = 0.000 ; free physical = 2435 ; free virtual = 9739
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 17 00:31:59 2026...

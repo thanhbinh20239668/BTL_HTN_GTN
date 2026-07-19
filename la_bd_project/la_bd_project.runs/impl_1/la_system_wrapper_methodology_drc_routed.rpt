@@ -1,0 +1,46 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Sat Jul 18 22:50:02 2026
+| Host         : binh running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_methodology -file la_system_wrapper_methodology_drc_routed.rpt -pb la_system_wrapper_methodology_drc_routed.pb -rpx la_system_wrapper_methodology_drc_routed.rpx
+| Design       : la_system_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 2
++----------+------------------+----------------------------------------------------+--------+
+| Rule     | Severity         | Description                                        | Checks |
++----------+------------------+----------------------------------------------------+--------+
+| TIMING-2 | Critical Warning | Invalid primary clock source pin                   | 1      |
+| TIMING-4 | Critical Warning | Invalid primary clock redefinition on a clock tree | 1      |
++----------+------------------+----------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-2#1 Critical Warning
+Invalid primary clock source pin  
+A primary clock la_system_i/clk_wiz_0/inst/clk_in1 is created on an inappropriate pin la_system_i/clk_wiz_0/inst/clk_in1. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock la_system_i/clk_wiz_0/inst/clk_in1 is defined downstream of clock clk_fpga_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+

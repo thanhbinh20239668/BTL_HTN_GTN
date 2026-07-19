@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:55
+/home/binh/BTL_HTN_GTN_final/code_rtl/axi_lite_registers.v,1783610153,verilog,,/home/binh/BTL_HTN_GTN_final/code_rtl/capture_controller.v,,axi_lite_registers,,,,,,,,
+/home/binh/BTL_HTN_GTN_final/code_rtl/capture_controller.v,1783616285,verilog,,/home/binh/BTL_HTN_GTN_final/code_rtl/clock_manager.v,,capture_controller,,,,,,,,
+/home/binh/BTL_HTN_GTN_final/code_rtl/clock_manager.v,1783610204,verilog,,/home/binh/BTL_HTN_GTN_final/code_rtl/input_synchronizer.v,,clock_manager,,,,,,,,
+/home/binh/BTL_HTN_GTN_final/code_rtl/input_synchronizer.v,1783609627,verilog,,/home/binh/BTL_HTN_GTN_final/code_rtl/logic_analyzer_top.v,,input_synchronizer,,,,,,,,
+/home/binh/BTL_HTN_GTN_final/code_rtl/logic_analyzer_top.v,1783616353,verilog,,/home/binh/BTL_HTN_GTN_final/code_rtl/sample_buffer.v,,logic_analyzer_top,,,,,,,,
+/home/binh/BTL_HTN_GTN_final/code_rtl/sample_buffer.v,1783609754,verilog,,/home/binh/BTL_HTN_GTN_final/code_rtl/trigger_unit.v,,sample_buffer,,,,,,,,
+/home/binh/BTL_HTN_GTN_final/code_rtl/tb_logic_analyzer.v,1783617340,verilog,,,,tb_logic_analyzer,,,,,,,,
+/home/binh/BTL_HTN_GTN_final/code_rtl/trigger_unit.v,1783615553,verilog,,/home/binh/BTL_HTN_GTN_final/code_rtl/tb_logic_analyzer.v,,trigger_unit,,,,,,,,
+/home/binh/BTL_HTN_GTN_final/logic_analyzer/logic_analyzer.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,

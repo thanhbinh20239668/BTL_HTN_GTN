@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../code_rtl/axi_lite_registers.v" \
+"../../../../../code_rtl/capture_controller.v" \
+"../../../../../code_rtl/clock_manager.v" \
+"../../../../../code_rtl/input_synchronizer.v" \
+"../../../../../code_rtl/logic_analyzer_top.v" \
+"../../../../../code_rtl/sample_buffer.v" \
+"../../../../../code_rtl/trigger_unit.v" \
+"../../../../../code_rtl/tb_logic_analyzer.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

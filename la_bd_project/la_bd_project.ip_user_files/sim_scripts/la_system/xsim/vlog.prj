@@ -1,0 +1,19 @@
+verilog xil_defaultlib --include "/home/binh/Tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../la_bd_project.gen/sources_1/bd/la_system/ipshared/ec67/hdl" --include "../../../../la_bd_project.gen/sources_1/bd/la_system/ipshared/86fe/hdl" --include "../../../../la_bd_project.gen/sources_1/bd/la_system/ipshared/f0b6/hdl/verilog" --include "../../../../la_bd_project.gen/sources_1/bd/la_system/ipshared/0127/hdl/verilog" --include "../../../../la_bd_project.gen/sources_1/bd/la_system/ipshared/3cbc" \
+"/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_processing_system7_0_0/la_system_processing_system7_0_0_sim_netlist.v" \
+"../../../bd/la_system/ipshared/e1d4/code_rtl/axi_lite_registers.v" \
+"../../../bd/la_system/ipshared/e1d4/code_rtl/capture_controller.v" \
+"../../../bd/la_system/ipshared/e1d4/code_rtl/clock_manager.v" \
+"../../../bd/la_system/ipshared/e1d4/code_rtl/input_synchronizer.v" \
+"../../../bd/la_system/ipshared/e1d4/code_rtl/sample_buffer.v" \
+"../../../bd/la_system/ipshared/e1d4/code_rtl/trigger_unit.v" \
+"../../../bd/la_system/ipshared/e1d4/code_rtl/logic_analyzer_top.v" \
+"../../../bd/la_system/ip/la_system_logic_analyzer_top_0_0/sim/la_system_logic_analyzer_top_0_0.v" \
+"/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_rst_ps7_0_200M_0/la_system_rst_ps7_0_200M_0_sim_netlist.v" \
+"/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_smartconnect_0_0/la_system_smartconnect_0_0_sim_netlist.v" \
+"../../../bd/la_system/sim/la_system.v" \
+"/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_clk_wiz_0_1/la_system_clk_wiz_0_1_sim_netlist.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

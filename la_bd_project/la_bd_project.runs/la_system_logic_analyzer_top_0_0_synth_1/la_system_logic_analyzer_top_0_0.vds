@@ -1,0 +1,365 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Jul 10 01:46:17 2026
+# Process ID         : 72266
+# Current directory  : /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/la_system_logic_analyzer_top_0_0_synth_1
+# Command line       : vivado -log la_system_logic_analyzer_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source la_system_logic_analyzer_top_0_0.tcl
+# Log file           : /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/la_system_logic_analyzer_top_0_0_synth_1/la_system_logic_analyzer_top_0_0.vds
+# Journal file       : /home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/la_system_logic_analyzer_top_0_0_synth_1/vivado.jou
+# Running On         : binh
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 1200.000 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16479 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18627 MB
+# Available Virtual  : 10675 MB
+#-----------------------------------------------------------
+source la_system_logic_analyzer_top_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/binh/BTL_HTN_GTN_final'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/binh/BTL_HTN_GTN_final' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/la_system_logic_analyzer_top_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/binh/Tools/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: la_system_logic_analyzer_top_0_0
+Command: synth_design -top la_system_logic_analyzer_top_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 72343
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1908.453 ; gain = 420.828 ; free physical = 284 ; free virtual = 6027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'la_system_logic_analyzer_top_0_0' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_logic_analyzer_top_0_0/synth/la_system_logic_analyzer_top_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'logic_analyzer_top' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/logic_analyzer_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clock_manager' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/clock_manager.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock_manager' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/clock_manager.v:5]
+INFO: [Synth 8-6157] synthesizing module 'input_synchronizer' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/input_synchronizer.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'input_synchronizer' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/input_synchronizer.v:4]
+INFO: [Synth 8-6157] synthesizing module 'trigger_unit' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/trigger_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'trigger_unit' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/trigger_unit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'capture_controller' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/capture_controller.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'capture_controller' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/capture_controller.v:4]
+INFO: [Synth 8-6157] synthesizing module 'sample_buffer' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/sample_buffer.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sample_buffer' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/sample_buffer.v:4]
+INFO: [Synth 8-6157] synthesizing module 'axi_lite_registers' [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/axi_lite_registers.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'axi_lite_registers' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/axi_lite_registers.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'logic_analyzer_top' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ipshared/e1d4/code_rtl/logic_analyzer_top.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'la_system_logic_analyzer_top_0_0' (0#1) [/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.gen/sources_1/bd/la_system/ip/la_system_logic_analyzer_top_0_0/synth/la_system_logic_analyzer_top_0_0.v:53]
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[31] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[30] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[29] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[28] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[27] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[26] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[25] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[24] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[23] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[22] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[21] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[20] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[19] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[18] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[17] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[16] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module axi_lite_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module axi_lite_registers is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1993.422 ; gain = 505.797 ; free physical = 172 ; free virtual = 5451
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2008.266 ; gain = 520.641 ; free physical = 184 ; free virtual = 5434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2008.266 ; gain = 520.641 ; free physical = 184 ; free virtual = 5434
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2008.266 ; gain = 0.000 ; free physical = 179 ; free virtual = 5428
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2160.047 ; gain = 0.000 ; free physical = 315 ; free virtual = 5416
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2160.047 ; gain = 0.000 ; free physical = 308 ; free virtual = 5410
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2160.047 ; gain = 672.422 ; free physical = 420 ; free virtual = 5436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2168.051 ; gain = 680.426 ; free physical = 420 ; free virtual = 5436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2168.051 ; gain = 680.426 ; free physical = 420 ; free virtual = 5436
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'capture_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                   ARMED |                               01 |                              001
+               POST_TRIG |                               10 |                              100
+                    DONE |                               11 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'capture_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2168.051 ; gain = 680.426 ; free physical = 423 ; free virtual = 5445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 14    
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---RAMs : 
+	            1024K Bit	(65536 X 16 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 17    
+	   9 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[31] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[30] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[29] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[28] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[27] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[26] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[25] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[24] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[23] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[22] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[21] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[20] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[19] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[18] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[17] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[16] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module la_system_logic_analyzer_top_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2168.051 ; gain = 680.426 ; free physical = 236 ; free virtual = 5298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                      | RTL Object         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|la_system_logic_analyzer_top_0_0 | inst/u_buf/mem_reg | 64 K x 16(READ_FIRST)  | W |   | 64 K x 16(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
++---------------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 2184.051 ; gain = 696.426 ; free physical = 381 ; free virtual = 4894
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 2185.051 ; gain = 697.426 ; free physical = 373 ; free virtual = 4886
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                      | RTL Object         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|la_system_logic_analyzer_top_0_0 | inst/u_buf/mem_reg | 64 K x 16(READ_FIRST)  | W |   | 64 K x 16(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
++---------------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_buf/mem_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 2204.082 ; gain = 716.457 ; free physical = 349 ; free virtual = 4862
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2365.895 ; gain = 878.270 ; free physical = 1521 ; free virtual = 6027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2365.895 ; gain = 878.270 ; free physical = 1521 ; free virtual = 6027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2365.895 ; gain = 878.270 ; free physical = 1521 ; free virtual = 6027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2365.895 ; gain = 878.270 ; free physical = 1521 ; free virtual = 6027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2368.863 ; gain = 881.238 ; free physical = 1521 ; free virtual = 6027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2368.863 ; gain = 881.238 ; free physical = 1521 ; free virtual = 6027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    19|
+|2     |LUT1     |    16|
+|3     |LUT2     |    22|
+|4     |LUT3     |    25|
+|5     |LUT4     |    54|
+|6     |LUT5     |    29|
+|7     |LUT6     |    84|
+|8     |RAMB36E1 |    32|
+|10    |FDCE     |   157|
+|11    |FDRE     |   148|
+|12    |FDSE     |    21|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2368.863 ; gain = 881.238 ; free physical = 1521 ; free virtual = 6027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 2368.863 ; gain = 729.457 ; free physical = 2963 ; free virtual = 7470
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2368.871 ; gain = 881.238 ; free physical = 2963 ; free virtual = 7470
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2368.871 ; gain = 0.000 ; free physical = 3132 ; free virtual = 7639
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2424.891 ; gain = 0.000 ; free physical = 3155 ; free virtual = 7664
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ac47f765
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:05 . Memory (MB): peak = 2424.891 ; gain = 1048.770 ; free physical = 3155 ; free virtual = 7664
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1452.090; main = 1452.090; forked = 203.220
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3128.246; main = 2424.895; forked = 924.160
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2448.902 ; gain = 0.000 ; free physical = 3154 ; free virtual = 7663
+INFO: [Common 17-1381] The checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/la_system_logic_analyzer_top_0_0_synth_1/la_system_logic_analyzer_top_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP la_system_logic_analyzer_top_0_0, cache-ID = 0b94591be2d59cec
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2448.902 ; gain = 0.000 ; free physical = 3148 ; free virtual = 7658
+INFO: [Common 17-1381] The checkpoint '/home/binh/BTL_HTN_GTN_final/la_bd_project/la_bd_project.runs/la_system_logic_analyzer_top_0_0_synth_1/la_system_logic_analyzer_top_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file la_system_logic_analyzer_top_0_0_utilization_synth.rpt -pb la_system_logic_analyzer_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 10 01:47:32 2026...
